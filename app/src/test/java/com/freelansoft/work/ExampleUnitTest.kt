@@ -1,5 +1,6 @@
 package com.freelansoft.work
 
+import com.freelansoft.work.dto.Plant
 import org.junit.Test
 
 import org.junit.Assert.*
