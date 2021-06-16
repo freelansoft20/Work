@@ -1,9 +1,8 @@
 package com.freelansoft.work
 
 import com.freelansoft.work.dto.Plant
+import org.junit.Assert.assertEquals
 import org.junit.Test
-
-import org.junit.Assert.*
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -21,6 +20,12 @@ class ExampleUnitTest {
 
     fun addFiveAndThree_EqualsEight() {
         assertEquals(8, 5 + 3)
+    }
+
+    @Test
+    fun confirmEasternRedbud_outputsEasternRedbud () {
+        var plant: Plant = Plant("Cercis", "canadesis", "Eastern Redbud")
+        assertEquals("Eastern Redbud", plant.toString());
     }
 
 }
